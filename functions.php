@@ -451,7 +451,7 @@ function esplanade_register_styles() {
 		'pt-serif' => 'PT+Serif'
 	);
 	if( array_key_exists( esplanade_get_option( 'body_font' ), $web_fonts ) || in_array( esplanade_get_option( 'headings_font' ), $web_fonts )|| in_array( esplanade_get_option( 'content_font' ), $web_fonts ) ) {
-		$web_fonts_stylesheet = 'http://fonts.googleapis.com/css?family=';
+		$web_fonts_stylesheet = 'https://fonts.googleapis.com/css?family=';
 		if( array_key_exists( esplanade_get_option( 'body_font' ), $web_fonts ) ) {
 			$web_fonts_stylesheet .= $web_fonts[esplanade_get_option( 'body_font' )] . ':regular,italic,bold,bolditalic';
 		}
